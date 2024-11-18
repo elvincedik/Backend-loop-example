@@ -13,10 +13,30 @@
         <th>states</th>
         <th>capital</th>
     </tr>
-    <tr>
-        <td>abia</td>
-        <td>umuahia</td>
-    </tr>
+
+
+    <?php 
+
+    $statesAndCapitals = 
+    array(
+        'abia'=>'umuahia',
+        'adamawa'=>'yola',
+        'akwa-ibom'=>'uyo',
+        'anambra'=>'awka',
+        'bauchi'=>'bauchi',
+    );
+
+    foreach($statesAndCapitals as $key => $value){
+        echo "
+            <tr>
+                <td>$key</td>
+                <td>$value</td>
+            </tr>
+        ";
+    };
+    
+    ?>
+
     
 </table>
 
